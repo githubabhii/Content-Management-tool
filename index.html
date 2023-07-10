@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Blog editor</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+  </nav>
+  <header>
+    <h1>Blog Editor</h1>
+</header>
+
+<main>
+    <div id="editor">
+        <input type="text" id="title" placeholder="Enter the blog title">
+        <textarea id="content" placeholder="Enter your blog content"></textarea>
+        <input type="file" id="image" accept="image/*">
+        <input type="text" id="video" placeholder="Enter video URL">
+        <button id="addButton">Add</button>
+    </div>
+    <div id="preview">
+        <h2 id="previewTitle"></h2>
+        <div id="previewContent"></div>
+        <img id="previewImage" alt="Preview Image">
+        <iframe id="previewVideo" frameborder="0" allowfullscreen></iframe>
+    </div> 
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
